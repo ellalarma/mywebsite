@@ -142,14 +142,14 @@
             <br>
             <div class="carousel-container">
     <div class="carousel-slide">
-      <img src="assets/img/IMG_1908.JPG" alt="Image 1">
-      <img src="assets/img/IMG_1916.JPG" alt="Image 2">
-      <img src="assets/img/IMG_1917.JPG" alt="Image 3">
-      <img src="assets/img/IMG_1919.JPG" alt="Image 4">
-      <img src="assets/img/IMG_1918.JPG" alt="Image 5">
-      <img src="assets/img/IMG_1922.JPG" alt="Image 6">
-      <img src="assets/img/IMG_1932.JPG" alt="Image 7">
-      <img src="assets/img/IMG_1935.JPG" alt="Image 8">
+      <img src="assets/img/IMG_1908.JPG" alt="Image 6">
+      <img src="assets/img/IMG_1916.JPG" alt="Image 7">
+      <img src="assets/img/IMG_1917.JPG" alt="Image 8">
+      <img src="assets/img/IMG_1919.JPG" alt="Image 9">
+      <img src="assets/img/IMG_1918.JPG" alt="Image 10">
+      <img src="assets/img/IMG_1922.JPG" alt="Image 11">
+      <img src="assets/img/IMG_1932.JPG" alt="Image 12">
+      <img src="assets/img/IMG_1935.JPG" alt="Image 13">
       <!-- Add more images here -->
     </div>
     <button class="prev">&#10094;</button>
@@ -190,6 +190,46 @@
         <div class="container">
             <h2 class="text-uppercase text-center text-secondary mb-0">FAQ</h2>
             <h3 class="font-weight-light mb-0">Images rin to</h3>
+            <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="assets/img/7.png" alt="Image 14">
+      <img src="assets/img/8.png" alt="Image 15">
+      <img src="assets/img/9.png" alt="Image 16">
+      <img src="assets/img/10.png" alt="Image 17">
+      <!-- Add more images here -->
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script>
+    const carouselSlide = document.querySelector(".carousel-slide");
+    const images = document.querySelectorAll(".carousel-slide img");
+
+    // Optional: Navigation buttons
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+
+    let counter = 0;
+    const slideWidth = images[0].clientWidth;
+
+    // Optional: Event listeners for navigation buttons
+    prevBtn.addEventListener("click", () => {
+      counter--;
+      if (counter < 0) {
+        counter = images.length - 1;
+      }
+      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
+    });
+
+    nextBtn.addEventListener("click", () => {
+      counter++;
+      if (counter >= images.length) {
+        counter = 0;
+      }
+      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
+    });
+  </script>
         </div>
     </section>
     <footer class="footer text-center">
