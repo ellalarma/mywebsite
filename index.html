@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Alarma-Ganelo</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .carousel-container {
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-slide {
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Optional: Add navigation buttons */
+    .carousel-container .prev,
+    .carousel-container .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      font-size: 20px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      outline: none;
+      z-index: 1;
+    }
+
+    .carousel-container .prev {
+      left: 10px;
+    }
+
+    .carousel-container .next {
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">#roadTOPHEReverwithELLA</a><button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#rsvp">RSVP</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#einvites">E-Invites</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#snaps">Snaps</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+        <h1>ALARMA - GANELO</h1>
+        <h2 class="font-weight-light mb-0">September 2024</h2>
+    </header>
+    <section id="rsvp" class="rsvp">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">RSVP</h2>
+            <h3 class="font-weight-light mb-0">We have reserve __ seats/s for you.
+                Please confirm your availability on/before date and month
+                +639951264144
+                Note: Please scan the qr code for RSVP</h3>
+        </div>
+    </section>
+    <section id="einvites" class="bg-primary text-white mb-0">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">E-Invites</h2>
+            <br>
+            <br>
+            <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="assets/img/2.png" alt="Image 1">
+      <img src="assets/img/3.png" alt="Image 2">
+      <img src="assets/img/4.png" alt="Image 3">
+      <img src="assets/img/5.png" alt="Image 4">
+      <img src="assets/img/6.png" alt="Image 5">
+      <!-- Add more images here -->
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script>
+    const carouselSlide = document.querySelector(".carousel-slide");
+    const images = document.querySelectorAll(".carousel-slide img");
+
+    // Optional: Navigation buttons
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+
+    let counter = 0;
+    const slideWidth = images[0].clientWidth;
+
+    // Optional: Event listeners for navigation buttons
+    prevBtn.addEventListener("click", () => {
+      counter--;
+      if (counter < 0) {
+        counter = images.length - 1;
+      }
+      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
+    });
+
+    nextBtn.addEventListener("click", () => {
+      counter++;
+      if (counter >= images.length) {
+        counter = 0;
+      }
+      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
+    });
+  </script>
+        </div>
+    </section>
+    <section id="snaps">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">SNAPS</h2>
+            <br>
+            <br>
+            <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="assets/img/IMG_1908.JPG" alt="Image 1">
+      <img src="assets/img/IMG_1916.JPG" alt="Image 2">
+      <img src="assets/img/IMG_1917.JPG" alt="Image 3">
+      <img src="assets/img/IMG_1919.JPG" alt="Image 4">
+      <img src="assets/img/IMG_1918.JPG" alt="Image 5">
+      <img src="assets/img/IMG_1922.JPG" alt="Image 6">
+      <img src="assets/img/IMG_1932.JPG" alt="Image 7">
+      <img src="assets/img/IMG_1935.JPG" alt="Image 8">
+      <!-- Add more images here -->
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script>
+    const carouselSlide = document.querySelector(".carousel-slide");
+    const images = document.querySelectorAll(".carousel-slide img");
+
+    // Optional: Navigation buttons
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+
+    let counter = 0;
+    const slideWidth = images[0].clientWidth;
+
+    // Optional: Event listeners for navigation buttons
+    prevBtn.addEventListener("click", () => {
+      counter--;
+      if (counter < 0) {
+        counter = images.length - 1;
+      }
+      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
+    });
+
+    nextBtn.addEventListener("click", () => {
+      counter++;
+      if (counter >= images.length) {
+        counter = 0;
+      }
+      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
+    });
+  </script>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">FAQ</h2>
+            <h3 class="font-weight-light mb-0">Images rin to</h3>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Any Questions you can contact us</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.instagram.com/angela.alarma/"><i class="fa fa-instagram fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright ©&nbsp;Ganelo-Alarma 2024</small></div>
+    </div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="web-modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Torus</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/image1.png">
+                                <p class="mb-5"><a href="url">Click Here</a> to see the full Web Page</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="web-modal-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">diab</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/diab.png">
+                                <p class="mb-5"><a href="url">Click Here</a> to see the full Web Page</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="web-modal-3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Entyvio</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/rte.png"><p class="mb-5"><a href="url">Click Here</a> to see the full Web Page</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="web-modal-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Euthyrox</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/euthyrox.png">
+                                <p class="mb-5"><a href="url">Click Here</a> to see the full Web Page</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="web-modal-5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Adcetris</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/adcetris.png">
+                                <p class="mb-5"><a href="/forxiga/index.html">Click Here</a> to see the full Web Page</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="web-modal-6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Forxiga-Xigduo</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/forxiga.png">
+                                <p class="mb-5" fontsize="20px"href="url">Click Here</a> to see the full Web Page</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+        <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="graphic-modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Torus</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/final_2-1.png">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="graphic-modal-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">diab</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/diab.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="graphic-modal-3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Entyvio</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/rte.png"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="graphic-modal-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Euthyrox</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/euthyrox.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="graphic-modal-5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Adcetris</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/adcetris.png">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="graphic-modal-6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto"><h2 class="text-uppercase text-secondary mb-0">Forxiga-Xigduo</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/forxiga.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/freelancer.js"></script>
+</body>
+
+</html>
