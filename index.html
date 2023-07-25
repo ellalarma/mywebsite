@@ -104,35 +104,6 @@
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
   </div>
-
-  <script>
-    const carouselSlide = document.querySelector(".carousel-slide");
-    const images = document.querySelectorAll(".carousel-slide img");
-
-    // Optional: Navigation buttons
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-
-    let counter = 0;
-    const slideWidth = images[0].clientWidth;
-
-    // Optional: Event listeners for navigation buttons
-    prevBtn.addEventListener("click", () => {
-      counter--;
-      if (counter < 0) {
-        counter = images.length - 1;
-      }
-      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
-    });
-
-    nextBtn.addEventListener("click", () => {
-      counter++;
-      if (counter >= images.length) {
-        counter = 0;
-      }
-      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
-    });
-  </script>
         </div>
     </section>
     <section id="snaps">
@@ -155,35 +126,6 @@
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
   </div>
-
-  <script>
-    const carouselSlide = document.querySelector(".carousel-slide");
-    const images = document.querySelectorAll(".carousel-slide img");
-
-    // Optional: Navigation buttons
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-
-    let counter = 0;
-    const slideWidth = images[0].clientWidth;
-
-    // Optional: Event listeners for navigation buttons
-    prevBtn.addEventListener("click", () => {
-      counter--;
-      if (counter < 0) {
-        counter = images.length - 1;
-      }
-      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
-    });
-
-    nextBtn.addEventListener("click", () => {
-      counter++;
-      if (counter >= images.length) {
-        counter = 0;
-      }
-      carouselSlide.style.transform = `translateX(-${counter * slideWidth}px)`;
-    });
-  </script>
         </div>
     </section>
     <section id="faq">
